@@ -1,9 +1,10 @@
 // Code your solutions in this file
-function writeCards(arr, eventName) {
+function writeCards(arr, message) {
     let result = [];
-    for (i = 0; i < arr.length; i++) {
-
+    for (let item in arr) {
+        result.push(`Thank you, ${arr[item]}, for the wonderful ${message} gift!`);
     }
+    return result;
 }
 
 function countDown() {
